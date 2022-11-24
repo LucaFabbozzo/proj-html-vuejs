@@ -19,7 +19,7 @@
           <p>Start working with Landrick that can provide everything you need to generate awareness, drive, traffic, connect.</p>
           <div class="icons d-flex">
             <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-linkedin-in"></i>
           </div>
@@ -46,18 +46,11 @@
           </form>
         </div>
       </div>
-      <div class="bottom d-flex justify-content-between align-items-center">
-        <p>&copy;2020 Landrick. Design with &hearts; by Shreetthemes</p>
-        <div class="credit d-flex">
-          <img src="../assets/img/american-ex.png" alt="mastercard">
-          <img src="../assets/img/discover.png" alt="mastercard">
-          <img src="../assets/img/master-card.png" alt="mastercard">
-          <img src="../assets/img/paypal.png" alt="mastercard">
-          <img src="../assets/img/visa.png" alt="mastercard">
-        </div>
-      </div>
     </div>
-  </footer>
+    </footer>
+
+    
+  
 </template>
 
 <style lang="scss" scoped>
@@ -66,26 +59,76 @@ footer {
   background-color: $footer-background;
   color: #ffffff;
   height: 100%;
-  p {
+  border-bottom: 1px solid #414141;
+  p, label {
     font-size: 0.9rem;
     color: #adb5bd;
   }
+  h4 {
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    i {
+      font-size: 0.7rem;
+      padding-right: 10px;
+    }
+    li {
+    list-style: none;
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+    color: #adb5bd;
+    cursor: pointer;
+  }
+  }
+  
   .landrick {
     img {
      width: 135px;
+     padding-bottom: 30px;
     }
-   .icons {
+    p {
+      padding-bottom: 30px;
+      padding-right: 110px;
+    }
+   .icons i {
     color: #adb5bd;
+    background-color: $footer-background;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #adb5bd;
+    border-radius: 8px;
    }
   }
 
-  .bottom {
-    border-top: 1px solid #adb5bd;
-    height: 90px;
-    img {
-      width: 35px;
+  .newsletter {
+    input, 
+    button {
+      width: 250px;
+      padding: 8px 10px;
+      border-radius: 10px;
+    }
+    button {
+      background-color: #232E52;
+      color: #2f55d4;
+      border: none;
+      box-shadow: 1px 1px 4px 0px rgba($color: #2f55d4, $alpha: 1.0);
+
+    }
+    input {
+      border: none;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      background-color: #27314f;
+    }
+    input::placeholder {
+      color: white;
+      font-size: 0.8rem;
     }
   }
 
 }
+
 </style>
