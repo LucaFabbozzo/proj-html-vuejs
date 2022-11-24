@@ -6,7 +6,9 @@
 
 <template>
   <main>
-    <h1>Main</h1>
+    <div class="container w-75 m-auto">
+      <h1>Main</h1>
+    </div>
   </main>
 </template>
 

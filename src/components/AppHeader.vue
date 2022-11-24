@@ -6,7 +6,9 @@
 
 <template>
   <header>
-    <h1>Header</h1>
+    <div class="container w-75 m-auto">
+      <h1>Header</h1>
+    </div>
   </header>
 </template>
 
@@ -14,6 +16,7 @@
 @use '../styles/partials/vars' as *;
   header {
     background-color: $top-background;
+    height: 70px;
   }
 
 </style>

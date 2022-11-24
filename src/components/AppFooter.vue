@@ -6,7 +6,9 @@
 
 <template>
   <footer>
-    <h1>Footer</h1>
+    <div class="container w-75 m-auto">
+      <h1>Footer</h1>
+    </div>
   </footer>
 </template>
 
@@ -15,5 +17,6 @@
 footer {
   background-color: $footer-background;
   color: #ffffff;
+  height: 530px;
 }
 </style>
