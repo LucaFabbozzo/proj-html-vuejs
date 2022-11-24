@@ -21,7 +21,11 @@
       </div>
       <nav>
         <ul>
-          <li v-for="(menus, index) in store.navbar" :key="index">{{menus}}</li>
+          <li 
+          v-for="(menus, index) in store.navbar" 
+          :key="index"
+          >{{menus}}<i class="fa-solid fa-chevron-down"></i>
+        </li>
         </ul>
       </nav>
       <div class="icons">
@@ -54,6 +58,12 @@
         list-style: none;
         text-transform: uppercase;
         padding-left: 40px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        i {
+          font-size: 0.8rem;
+          margin-left: 5px;
+        }
       }
     }
     }
@@ -62,6 +72,5 @@
     display: flex;
     justify-content: space-evenly;
   }
- 
   }
 </style>
