@@ -50,11 +50,12 @@
   .logo {
     cursor: pointer;
     img {
-      width: 130px;
+      width: 160px;
+      padding-right: 30px;
     }
   }   
   nav {
-   min-width: 40%;
+   min-width: 380px;
     ul {
       display: flex;
       justify-content: space-between;
@@ -82,7 +83,7 @@
       background-color: #E4E9F8;
       border-radius: 10px;
       cursor: pointer;
-      color: #3157D5;  
+      color: $secondary-color;  
     }
       i.null {
         color: #8997AA;

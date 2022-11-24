@@ -59,7 +59,7 @@ footer {
   background-color: $footer-background;
   color: #ffffff;
   height: 100%;
-  border-bottom: 1px solid #414141;
+  border-bottom: 1px solid #26304F;
   p, label {
     font-size: 0.9rem;
     color: #adb5bd;

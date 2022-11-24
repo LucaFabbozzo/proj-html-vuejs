@@ -45,6 +45,7 @@
     height: 90px;
     img {
       width: 35px;
+      margin-right: 5px;
     }
   }
   }
