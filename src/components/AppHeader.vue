@@ -30,10 +30,10 @@
         </ul>
       </nav>
       <div class="icons">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-stack-overflow"></i>
-        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-magnifying-glass null"></i>
+        <i class="fa-brands fa-github color"></i>
+        <i class="fa-brands fa-stack-overflow color"></i>
+        <i class="fa-regular fa-user color"></i>
       </div>
     </div>
   </header>
@@ -48,6 +48,7 @@
     color: #2F55D4;
   }
   .logo {
+    cursor: pointer;
     img {
       width: 130px;
     }
@@ -64,6 +65,7 @@
         text-transform: uppercase;
         font-size: 0.8rem;
         font-weight: bold;
+        cursor: pointer;
         i {
           font-size: 0.8rem;
           margin-left: 5px;
@@ -75,6 +77,17 @@
     width: 180px;
     display: flex;
     justify-content: space-evenly;
-  }
+      i.color {  
+      padding: 12px;
+      background-color: #E4E9F8;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #3157D5;  
+    }
+      i.null {
+        color: #8997AA;
+        padding: 12px;
+      }
+    }
   }
 </style>
