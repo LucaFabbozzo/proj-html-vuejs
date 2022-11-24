@@ -24,7 +24,8 @@
           <li 
           v-for="(menus, index) in store.navbar" 
           :key="index"
-          >{{menus}}<i class="fa-solid fa-chevron-down"></i>
+          :class="{'active' : menus.active}"
+          >{{menus.label}}<i v-if="menus.items" class="fa-solid fa-chevron-down"></i>
         </li>
         </ul>
       </nav>
@@ -43,12 +44,16 @@
   header {
     background-color: $top-background;
     height: 70px;
+  .active {
+    color: #2F55D4;
+  }
   .logo {
     img {
       width: 130px;
     }
   }   
   nav {
+   min-width: 40%;
     ul {
       display: flex;
       justify-content: space-between;
@@ -57,7 +62,6 @@
       li {
         list-style: none;
         text-transform: uppercase;
-        padding-left: 40px;
         font-size: 0.8rem;
         font-weight: bold;
         i {
