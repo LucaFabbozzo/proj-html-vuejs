@@ -25,6 +25,7 @@ export const store = reactive({
         active: false,
         items: ['docs-1', 'docs-2', 'docs-3']
     }
-]
-  
+  ],
+  companyNavbar: ['About us', 'Services', 'Team', 'Pricing', 'Project', 'Careers', 'Blog', 'Login'],
+  usefullNavbar: ['Terms of Services', 'Privacy Policy', 'Documentation', 'Changelog', 'Components'],
 });
