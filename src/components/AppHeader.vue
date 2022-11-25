@@ -24,8 +24,7 @@
           <li 
           v-for="(menus, index) in store.navbar" 
           :key="index"
-          :class="{'active' : menus.active}"
-          >{{menus.label}}<i v-if="menus.items" class="fa-solid fa-chevron-down"></i>
+          ><a :class="{'active' : menus.active}" href="">{{menus.label}}<i v-if="menus.items" class="fa-solid fa-chevron-down"></i></a>
         </li>
         </ul>
       </nav>
@@ -67,6 +66,10 @@
         font-size: 0.8rem;
         font-weight: bold;
         cursor: pointer;
+        a {
+          text-decoration: none;
+          color: #3c4858;
+        }
         i {
           font-size: 0.8rem;
           margin-left: 5px;
