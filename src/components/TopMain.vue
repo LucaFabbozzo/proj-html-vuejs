@@ -7,11 +7,29 @@
 <template>
   <section class="main-top">
     <h3>Key Features</h3>
-    <p>Start Working with <spam class="blue">Landrick</spam> that can provide everything you need to generate <br> awareness, drive traffic, connect</p>
-    <div class="cards d-flex">
+    <p>Start Working with <spam class="blue">Landrick</spam> that can provide everything you need to generate <br> awareness, drive traffic, connect.</p>
+    <div class="cards d-flex justify-content-between">
       <div class="square">
         <i class="fa-solid fa-layer-group top"></i>
         <h4>Modular</h4>
+        <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
+        <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
+      </div>
+       <div class="square">
+        <i class="fa-solid fa-desktop top"></i>
+        <h4>Responsive</h4>
+        <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
+        <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
+      </div>
+       <div class="square">
+        <i class="fa-solid fa-users-viewfinder top"></i>
+        <h4>Customizable</h4>
+        <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
+        <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
+      </div>
+       <div class="square">
+       <i class="fa-solid fa-arrows-up-down-left-right top"></i>
+        <h4>Scalable</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
         <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
       </div>
@@ -36,8 +54,11 @@
       font-size: 1.1rem;
       padding-top: 20px;
     }
+    spam {
+      color: $secondary-color;
+    }
     .square {
-      min-width: 245px;
+      min-width: 235px;
       max-width: 260px;
       border: 1px solid #F6F6F7;
       padding: 10px 20px;
