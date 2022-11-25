@@ -7,7 +7,8 @@
       store
     }
   }
-  }
+}
+
   </script>
 
 <template>
@@ -23,15 +24,8 @@
         <h4>&dollar;{{rate.prize}}</h4>
         <p>{{rate.paid}}</p>
         <p>{{rate.description}}</p>
-        <!-- <ul>
-          <li v-for="(points, index) in store.rates[index].list" :key="index">{{points.list}}</li>
-        </ul> -->
         <ul>
-          <li><i class="fa-regular fa-circle-check"></i>Full Access</li>
-          <li><i class="fa-regular fa-circle-check"></i>Enhaced Security</li>
-          <li><i class="fa-regular fa-circle-check"></i>Source Files</li>
-          <li><i class="fa-regular fa-circle-check"></i>1 Domain Free</li>
-          <li><i class="fa-regular fa-circle-check"></i>Enhaced Security</li>
+          <li v-for="(lists, index) in rate.list" :key="index"><i class="fa-regular fa-circle-check"></i>{{lists}}</li>
         </ul> 
         <button class="btn-blue">{{rate.button}}</button>
         <p v-if="rate.creditCard">* No credit card required</p>
