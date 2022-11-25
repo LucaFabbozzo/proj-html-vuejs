@@ -94,6 +94,7 @@ footer {
   }
   
   .landrick {
+    min-width: 300px;
     img {
      width: 135px;
      padding-bottom: 30px;
@@ -112,7 +113,16 @@ footer {
    }
   }
 
+  .company {
+    min-width: 100px;
+  }
+
+  .usefull-links {
+    min-width: 160px;
+  }
+
   .newsletter {
+    min-width: 260px;
     input, 
     button {
       width: 250px;
