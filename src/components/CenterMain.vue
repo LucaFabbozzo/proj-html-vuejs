@@ -15,7 +15,7 @@
         <li><i class="fa-regular fa-circle-check"></i>Our Talented & Esperienced Marketing Agency</li>
          <li><i class="fa-regular fa-circle-check"></i>Created your own skin to match your brand</li>
       </ul>
-      <button>Read More<i class="fa-solid fa-arrow-right"></i></button>
+      <button class="btn-blue">Read More<i class="fa-solid fa-arrow-right"></i></button>
     </div>
     <div class="right">
       <img src="../assets/img/1.png" alt="#">
@@ -53,7 +53,7 @@
         }
       }
       button{
-         @include  btnBlue;
+           @include  btnBlue;  
          i {
           margin-left: 8px;
           font-size: 0.8rem;

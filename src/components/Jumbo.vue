@@ -66,6 +66,9 @@
         margin-bottom: 10px;
         width: 130;
       }
+    & .btn-blue:hover {
+      background-color: #2443AB
+    }
     .btn-white {
       @include btnWhite;
       margin-top: 10px;

@@ -88,6 +88,10 @@
       cursor: pointer;
       color: $secondary-color;  
     }
+    & i.color:hover {
+      background-color: $secondary-color;
+      color: #E4E9F8;
+    }
       i.null {
         color: #8997AA;
         padding: 12px;
