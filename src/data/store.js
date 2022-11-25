@@ -68,7 +68,7 @@ export const store = reactive({
   rates: [
     {
       plan: "Basic",
-      prize: "&dollar; 9.00",
+      prize: "9.00",
       paid: "Per Month",
       description: "All the basic for business that are just getting started.",
       list: [
@@ -79,12 +79,12 @@ export const store = reactive({
         "Enhaced Security",
       ],
       button: "Buy Now",
-      creditCard: false,
+      creditCard: true,
       best: false,
     },
     {
       plan: "Business",
-      prize: "&dollar; 39.00",
+      prize: "39.00",
       paid: "Per Month",
       description: "Better for growing businesses that want more customers.",
       list: [
@@ -95,12 +95,12 @@ export const store = reactive({
         "Enhaced Security",
       ],
       button: "Buy Now",
-      creditCard: false,
+      creditCard: true,
       best: true,
     },
     {
       plan: "Enterprise",
-      prize: "&dollar; 79.00",
+      prize: "79.00",
       paid: "Per Month",
       description: "Advanced features for pros who need more customization",
       list: [
@@ -111,7 +111,7 @@ export const store = reactive({
         "Enhaced Security",
       ],
       button: "Buy Now",
-      creditCard: false,
+      creditCard: true,
       best: false,
     },
   ],

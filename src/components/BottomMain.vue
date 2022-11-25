@@ -1,6 +1,12 @@
   <script>
+  import {store} from '../data/store'
   export default {
-  name: 'BottomMain'
+  name: 'BottomMain',
+  data() {
+    return {
+      store
+    }
+  }
   }
   </script>
 
@@ -10,22 +16,25 @@
       <h3>Our Rates for developer from landrick team</h3>
       <p>Start working with <span>Landrick</span> that can provide everything you need to generate<br>awareness, drive traffic, connect</p>
     </div>
+    <!-- stampo i box dinamicamente tramite i miei dati in store -->
     <div class="center d-flex justify-content-between">
-      <div class="box">
-        <span>Basic</span>
-        <h4>&dollar;9.00</h4>
-        <p>Per Month</p>
-        <p>All the basics for businesses that are just getting started</p>
-        <div class="line"></div>
+      <div class="box" v-for="(rate, index) in store.rates" :key="index">
+        <span>{{rate.plan}}</span>
+        <h4>&dollar;{{rate.prize}}</h4>
+        <p>{{rate.paid}}</p>
+        <p>{{rate.description}}</p>
+        <!-- <ul>
+          <li v-for="(points, index) in store.rates[index].list" :key="index">{{points.list}}</li>
+        </ul> -->
         <ul>
           <li><i class="fa-regular fa-circle-check"></i>Full Access</li>
           <li><i class="fa-regular fa-circle-check"></i>Enhaced Security</li>
           <li><i class="fa-regular fa-circle-check"></i>Source Files</li>
           <li><i class="fa-regular fa-circle-check"></i>1 Domain Free</li>
           <li><i class="fa-regular fa-circle-check"></i>Enhaced Security</li>
-        </ul>
-        <button class="btn-blue">Buy Now</button>
-        <p>* No credit card required</p>
+        </ul> 
+        <button class="btn-blue">{{rate.button}}</button>
+        <p v-if="rate.creditCard">* No credit card required</p>
       </div>
     </div>
     <div class="bottom">
