@@ -11,8 +11,8 @@
           <span>Development</span>
           <h1>A complete<br>Developer Tolset</h1>
           <p>Launch your campaign and benefits from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
-          <button>Get Started</button>
-          <button>Documentation</button>
+          <button class="btn-blue">Get Started</button>
+          <button class="btn-white">Documentation</button>
           <p>Current Version: v2.6.0</p>
         </div>
         <div class="right">
@@ -34,6 +34,7 @@
 
 <style lang="scss" scoped>
 @use '../styles/partials/vars' as *;
+@use '../styles/partials/mixin' as *;
   .jumbo {
     background-color: $top-background;
     height: 100%;
@@ -58,8 +59,20 @@
     img {
       min-width: 450px;
     }
+    .btn-blue {
+        @include btnBlue;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 130;
+      }
+    .btn-white {
+      @include btnWhite;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
     .left {
-      min-width: 250px;
+      min-width: 350px;
       max-width: 520px;
       padding-right: 30px;
       padding-top: 140px

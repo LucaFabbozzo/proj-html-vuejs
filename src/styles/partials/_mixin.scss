@@ -1,0 +1,21 @@
+@use './vars' as*;
+
+@mixin btnBlue() {
+  width: 155px;
+  padding: 8px 14px;
+  background-color: $secondary-color;
+  border: none;
+  box-shadow: 1px 1px 4px 0px rgba($color: $secondary-color, $alpha: 1.0);
+  color: #f8f9fc;
+  border-radius: 8px;
+}
+
+
+@mixin btnWhite() {
+  width: 155px;
+  padding: 8px 14px;
+  background-color: $top-background;
+  color: $secondary-color;
+  border-radius: 8px;
+  border: 1px solid $secondary-color;
+}
