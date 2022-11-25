@@ -1,7 +1,9 @@
   <script>
-  import {store} from '../data/store'
+import { store } from '../data/store'
+  import BottomFooter from './BottomFooter.vue';
   export default {
   name: 'AppFooter',
+  components: {BottomFooter},
   data() {
     return {
         store
@@ -48,7 +50,7 @@
       </div>
     </div>
     </footer>
-
+    <BottomFooter />
     
   
 </template>
