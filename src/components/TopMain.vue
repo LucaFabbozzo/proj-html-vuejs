@@ -161,18 +161,22 @@
         border: 1px solid #5B6473;
         .active {
           background-color: #3c4858;
-          border-radius: 6px;
          }
         li {
           list-style: none;
           width: 20%;
           height: 100%;
           padding: 5px 10px;
+          border-radius: 6px;
+          cursor: pointer;
          a{
           text-decoration: none;
           color: #ffffff;
          }
         }
+         & li:hover {
+          background-color: #3c4858;
+         }
       }
     }
   }

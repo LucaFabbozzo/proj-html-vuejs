@@ -24,7 +24,7 @@
           <li 
           v-for="(menus, index) in store.navbar" 
           :key="index"
-          ><a :class="{'active' : menus.active}" href="">{{menus.label}}<i v-if="menus.items" class="fa-solid fa-chevron-down"></i></a>
+          ><a :class="{'active' : menus.active}" href="#">{{menus.label}}<i v-if="menus.items" class="fa-solid fa-chevron-down"></i></a>
         </li>
         </ul>
       </nav>

@@ -1,8 +1,9 @@
   <script>
-  import TopMain from './TopMain.vue';
+import TopMain from './TopMain.vue';
+import CenterMain from './CenterMain.vue';
 export default {
   name: 'AppMain',
-  components: {TopMain}
+  components: {TopMain, CenterMain}
   }
   </script>
 
@@ -10,6 +11,7 @@ export default {
   <main>
     <div class="container w-75 m-auto">
       <TopMain />
+      <CenterMain />
     </div>
   </main>
 </template>
