@@ -84,6 +84,7 @@
       .clients {
         height: 105px;
         background-color: #F8F9FC;
+        margin-bottom: 110px;
       img {
         width: 70px;
       }

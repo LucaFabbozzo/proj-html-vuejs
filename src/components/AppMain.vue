@@ -1,13 +1,15 @@
   <script>
-  export default {
-    name: 'AppMain'
+  import TopMain from './TopMain.vue';
+export default {
+  name: 'AppMain',
+  components: {TopMain}
   }
   </script>
 
 <template>
   <main>
     <div class="container w-75 m-auto">
-      <h1>Main</h1>
+      <TopMain />
     </div>
   </main>
 </template>
