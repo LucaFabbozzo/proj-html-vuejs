@@ -43,5 +43,26 @@ export const store = reactive({
     "Changelog",
     "Components",
   ],
-
+  quickStartNavbar: [
+    {
+      route: "npm",
+      label: "npm",
+      active: true,
+    },
+    {
+      route: "nuget",
+      label: "nuget",
+      active: false,
+    },
+    {
+      route: "spm",
+      label: "spm",
+      active: false,
+    },
+    {
+      route: "github",
+      label: "github",
+      active: false,
+    }
+  ],
 });
