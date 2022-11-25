@@ -29,13 +29,16 @@ import { store } from '../data/store'
         <div class="company d-flex flex-column align-items-start w-25">
           <h4>Company</h4>
           <ul>
-            <li v-for="(company, index) in store.companyNavbar" :key="index"><i class="fa-solid fa-chevron-right"></i>{{company}}</li>
+            <li 
+            v-for="(company, index) in store.companyNavbar" 
+            :key="index"><i class="fa-solid fa-chevron-right"></i><a href="">{{company}}</a></li>
           </ul>
         </div>
         <div class="usefull-links d-flex flex-column align-items-start w-25">
           <h4>Usefull Links</h4>
           <ul>
-            <li v-for="(usefull, index) in store.usefullNavbar" :key="index"><i class="fa-solid fa-chevron-right"></i>{{usefull}}</li>
+            <li 
+            v-for="(usefull, index) in store.usefullNavbar" :key="index"><i class="fa-solid fa-chevron-right"></i><a href="#">{{usefull}}</a></li>
           </ul>
         </div>
         <div class="newsletter d-flex flex-column align-items-start w-25">
@@ -83,6 +86,10 @@ footer {
     padding-bottom: 5px;
     color: #adb5bd;
     cursor: pointer;
+    a {
+      text-decoration: none;
+      color: #adb5bd;
+    }
   }
   }
   
