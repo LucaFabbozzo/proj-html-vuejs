@@ -1,4 +1,4 @@
-  <script>
+<script>
   export default {
     name: 'Jumbo'
   }
@@ -57,7 +57,7 @@
       border-radius: 10px;
     }
     img {
-      min-width: 450px;
+      width: 450px;
     }
     .btn-blue {
         @include btnBlue;
@@ -86,10 +86,32 @@
   }
       .clients {
         height: 105px;
+        min-width: 1000px;
         background-color: #F8F9FC;
         margin-bottom: 110px;
       img {
         width: 70px;
       }
+    }
+
+    // media query
+
+    @media screen and (max-width: 1050px) {
+      .jumbo {
+              .left {
+                  min-width: 400px;
+                  max-width: 440px;
+                }
+              .right {
+                img {
+                  padding-top: 100px;
+                  width: 300px;
+                }
+              }
+          .clients {
+            min-width: 600px;
+          }   
+      }
+
     }
 </style>

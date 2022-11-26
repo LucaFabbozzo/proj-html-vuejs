@@ -1,4 +1,4 @@
-  <script>
+<script>
   import {store} from '../data/store'
   export default {
   name: 'BottomMain',
@@ -24,6 +24,7 @@
         <h4>&dollar;{{rate.prize}}</h4>
         <p>{{rate.paid}}</p>
         <p>{{rate.description}}</p>
+      <!-- stampo dinamicamente la lista -->
         <ul>
           <li v-for="(lists, index) in rate.list" :key="index"><i class="fa-regular fa-circle-check"></i>{{lists}}</li>
         </ul> 
@@ -135,5 +136,22 @@
   }
 }
 
+ // media query
 
+ @media screen and (max-width: 1050px) {
+  .main-bottom {
+      .center {
+        width: 600px;
+    .box{
+        min-width: 220px;
+        width: 200px;
+        margin-right: 20px;
+      .btn-blue {
+        width: 150px;
+      }
+    }
+  }
+  }
+ 
+ }
 </style>

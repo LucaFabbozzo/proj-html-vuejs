@@ -1,4 +1,4 @@
-  <script>
+<script>
   import {store} from '../data/store'
   export default {
   name: 'AppHeader',
@@ -54,14 +54,13 @@
     }
   }   
   nav {
-   min-width: 380px;
     ul {
-      display: flex;
-      justify-content: space-between;
       margin: 0;
       padding: 0;
       li {
+        display: inline-block;
         list-style: none;
+        padding: 0 20px;
         text-transform: uppercase;
         font-size: 0.8rem;
         font-weight: bold;
@@ -98,4 +97,13 @@
       }
     }
   }
+
+  // media query
+
+  @media screen and (max-width: 1050px) {
+    nav {
+      display: none;
+    }
+  }
+
 </style>

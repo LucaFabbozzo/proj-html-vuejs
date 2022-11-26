@@ -1,4 +1,4 @@
-  <script>
+<script>
   import {store} from '../data/store'
   export default {
   name: 'TopMain',
@@ -86,7 +86,7 @@
       color: $secondary-color;
     }
     .square {
-      min-width: 235px;
+      min-width: 250px;
       max-width: 260px;
       border: 1px solid #F6F6F7;
       padding: 10px 20px;
@@ -182,4 +182,12 @@
   }
 
 
+  // media query
+  @media screen and (max-width: 1050px) {
+    .main-top {
+      .cards {
+        flex-wrap: wrap;
+      }
+    }
+  }
 </style>

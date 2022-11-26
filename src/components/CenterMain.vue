@@ -1,5 +1,5 @@
   
-  <script>
+<script>
   export default {
     name: 'CenterMain'
   }
@@ -67,5 +67,23 @@
         min-width: 430px;
       }
     }
+  }
+
+  // media query
+
+  @media screen and (max-width: 1050px) {
+    .main-center {
+         .left {
+        min-width: 350px;
+    }
+    .right {
+      img {
+        max-width: 300px;
+        min-width: 280px;
+        padding-top: 50px;
+      }
+    }
+    }
+ 
   }
 </style>
