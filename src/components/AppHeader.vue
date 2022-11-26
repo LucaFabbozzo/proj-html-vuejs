@@ -1,17 +1,17 @@
 <script>
-  import {store} from '../data/store'
-  export default {
+import { store } from '../data/store'
+export default {
   name: 'AppHeader',
   props: {
-      logo: String
+    logo: String
   },
   data() {
     return {
       store
-      }
     }
   }
-  </script>
+}
+</script>
 
 <template>
   <header>
@@ -21,11 +21,10 @@
       </div>
       <nav>
         <ul>
-          <li 
-          v-for="(menus, index) in store.navbar" 
-          :key="index"
-          ><a :class="{'active' : menus.active}" href="#">{{menus.label}}<i v-if="menus.items" class="fa-solid fa-chevron-down"></i></a>
-        </li>
+          <li v-for="(menus, index) in store.navbar" :key="index"><a :class="{ 'active': menus.active }" href="#">{{
+              menus.label
+          }}<i v-if="menus.items" class="fa-solid fa-chevron-down"></i></a>
+          </li>
         </ul>
       </nav>
       <div class="icons">
@@ -40,23 +39,29 @@
 
 <style lang="scss" scoped>
 @use '../styles/partials/vars' as *;
-  header {
-    background-color: $top-background;
-    height: 70px;
+
+header {
+  background-color: $top-background;
+  height: 70px;
+
   .active {
     color: #2F55D4;
   }
+
   .logo {
     cursor: pointer;
+
     img {
       width: 160px;
       padding-right: 30px;
     }
-  }   
+  }
+
   nav {
     ul {
       margin: 0;
       padding: 0;
+
       li {
         display: inline-block;
         list-style: none;
@@ -65,45 +70,57 @@
         font-size: 0.8rem;
         font-weight: bold;
         cursor: pointer;
+
         a {
           text-decoration: none;
           color: #3c4858;
         }
+
         i {
           font-size: 0.8rem;
           margin-left: 5px;
         }
       }
     }
-    }
+  }
+
   .icons {
     width: 180px;
     display: flex;
     justify-content: space-evenly;
-      i.color {  
+
+    i.color {
       padding: 12px;
       background-color: #E4E9F8;
       border-radius: 10px;
       cursor: pointer;
-      color: $secondary-color;  
+      color: $secondary-color;
     }
+
     & i.color:hover {
       background-color: $secondary-color;
       color: #E4E9F8;
     }
-      i.null {
-        color: #8997AA;
-        padding: 12px;
+
+    i.null {
+      color: #8997AA;
+      padding: 12px;
+    }
+  }
+}
+
+// media query
+
+@media screen and (max-width: 1050px) {
+  header {
+    nav {
+      ul {
+        li {
+          padding: 0 8px;
+          font-size: 0.6rem;
+        }
       }
     }
   }
-
-  // media query
-
-  @media screen and (max-width: 1050px) {
-    nav {
-      display: none;
-    }
-  }
-
+}
 </style>
