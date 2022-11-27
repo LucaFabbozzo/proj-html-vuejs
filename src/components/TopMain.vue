@@ -16,7 +16,7 @@ export default {
     <p>Start Working with <span class="blue">Landrick</span> that can provide everything you need to generate <br>
       awareness, drive traffic, connect.</p>
     <div class="cards d-flex justify-content-between">
-      <div class="square">
+      <div class="square d2">
         <i class="fa-solid fa-layer-group top"></i>
         <h4>Modular</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
@@ -90,12 +90,19 @@ export default {
   }
 
   .square {
-    min-width: 250px;
-    max-width: 260px;
+    min-width: 190px;
+    max-width: 200px;
     border: 1px solid #F6F6F7;
     padding: 10px 20px;
     margin-bottom: 80px;
     border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s all;
+
+    &.square:hover {
+      transform: scale(1.07);
+      transform-origin: bottom;
+    }
 
     i.bottom {
       font-size: 0.7rem;

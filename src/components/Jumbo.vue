@@ -63,6 +63,7 @@ export default {
 
   p {
     color: #8492a6;
+    font-size: 1.1rem;
   }
 
   span {
@@ -75,7 +76,8 @@ export default {
   }
 
   img {
-    width: 450px;
+    width: 480px;
+    margin-left: 30px;
   }
 
   .btn-blue {
@@ -97,10 +99,9 @@ export default {
   }
 
   .left {
-    min-width: 350px;
-    max-width: 520px;
-    padding-right: 30px;
-    padding-top: 140px
+    min-width: 540px;
+    max-width: 560px;
+    padding-top: 140px;
   }
 
   .right {

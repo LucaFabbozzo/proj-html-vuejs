@@ -36,6 +36,8 @@ footer {
     min-width: 600px;
     font-size: 0.9rem;
     color: #adb5bd;
+    padding: 0;
+    margin: 0;
   }
 
   ul {

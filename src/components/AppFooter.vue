@@ -45,8 +45,11 @@ export default {
           <h4>Newsletter</h4>
           <p>Sign up and receive the latest tips via email.</p>
           <form>
-            <label for="">Write your email<span>*</span></label>
-            <input type="text" placeholder="Your email:"><i class="fa-regular fa-envelope"></i>
+            <div class="font-user">
+              <label for="">Write your email<span>*</span></label>
+              <input type="text" placeholder="Your email:">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
             <button>Subscribe</button>
           </form>
         </div>
@@ -115,12 +118,21 @@ footer {
     }
 
     .icons i {
-      color: #adb5bd;
-      background-color: $footer-background;
-      padding: 8px;
-      margin-right: 10px;
-      border: 1px solid #adb5bd;
-      border-radius: 8px;
+        color: #adb5bd;
+        background-color: #202942;
+        padding: 7px 8px;
+        margin-right: 5px;
+        border: 1px solid #adb5bd;
+        border-radius: 8px;
+        width: 31px;
+        height: 30px;
+        line-height: 15px;
+        cursor: pointer;
+    }
+
+    & i:hover {
+      background-color: $primary-font;
+      color: $secondary-color;
     }
   }
 
@@ -149,10 +161,24 @@ footer {
 
     button {
       background-color: #232E52;
-      color: #2f55d4;
+      color: #223881;
       border: none;
       box-shadow: 1px 1px 4px 0px rgba($color: #2f55d4, $alpha: 1.0);
+    }
 
+    & button:hover {
+      background-color: #364883;
+    }
+
+    .font-user {
+      position: relative;
+    }
+
+    .font-user i{
+      position: absolute;
+      left: 15px;
+      top: 47px;
+      color: $primary-font;
     }
 
     input {
@@ -160,6 +186,7 @@ footer {
       margin-top: 10px;
       margin-bottom: 15px;
       background-color: #27314f;
+      padding-left: 40px;
     }
 
     input::placeholder {
@@ -184,3 +211,97 @@ footer {
   }
 }
 </style>
+
+
+
+<!-- 
+<!DOCTYPE html> 
+<html> 
+  
+<head>
+    <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+      
+    <style> 
+      
+        /* Assign full width inputs*/ 
+        input[type=text], 
+        input[type=password] { 
+            width: 100%; 
+            padding: 12px 40px; 
+            margin: 8px 0; 
+            display: inline-block; 
+            border: 1px solid #ccc; 
+            box-sizing: border-box; 
+        } 
+          
+        /* Set a style for the buttons*/ 
+        button { 
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 14px 20px; 
+            margin: 8px 0; 
+            border: none; 
+            cursor: pointer; 
+            width: 100%; 
+        } 
+  
+        /* Set a hover effect for the button*/ 
+        button:hover { 
+            opacity: 0.8; 
+        } 
+  
+        /* Set extra style for the cancel button*/ 
+        .container { 
+            padding: 16px; 
+        } 
+      
+        .fontuser {
+            position: relative;
+        }
+          
+        .fontuser i{
+            position: absolute;
+            left: 15px;
+            top: 40px;
+            color: gray;
+        }
+          
+        .fontpassword {
+            position: relative;
+        }
+          
+        .fontpassword i{
+            position: absolute;
+            left: 15px;
+            top: 40px;
+            color: gray;
+        }
+    </style> 
+</head>
+  
+<body> 
+    <div class="container"> 
+        <div class="fontuser">
+            <label><b>Username</b></label> 
+            <input type="text" 
+                    placeholder="Enter Username"
+                    name="uname" required> 
+            <i class="fa fa-user fa-lg"></i>
+        </div>
+          
+        <div class="fontpassword">
+            <label><b>Password</b></label> 
+            <input type="password"
+                    placeholder="Enter Password"
+                    name="psw" required> 
+            <i class="fa fa-key fa-lg"></i>
+        </div>     
+          
+        <button type="submit">Login</button> 
+        <input type="checkbox" checked="checked">
+                Remember me 
+    </div> 
+</body> 
+  
+</html> -->
