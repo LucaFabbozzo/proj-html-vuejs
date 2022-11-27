@@ -7,7 +7,7 @@ export default {
 <template>
   <div class="jumbo">
     <i class="fa-solid fa-gear"></i>
-    <div class="container d-flex py-5 w-75 m-auto">
+    <div class="container d-flex w-75 m-auto">
       <div class="left">
         <span>Development</span>
         <h1>A complete<br>Developer Tolset</h1>

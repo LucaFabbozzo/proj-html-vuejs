@@ -118,16 +118,16 @@ footer {
     }
 
     .icons i {
-        color: #adb5bd;
-        background-color: #202942;
-        padding: 7px 8px;
-        margin-right: 5px;
-        border: 1px solid #adb5bd;
-        border-radius: 8px;
-        width: 31px;
-        height: 30px;
-        line-height: 15px;
-        cursor: pointer;
+      color: #adb5bd;
+      background-color: #202942;
+      padding: 7px 8px;
+      margin-right: 5px;
+      border: 1px solid #adb5bd;
+      border-radius: 8px;
+      width: 31px;
+      height: 30px;
+      line-height: 15px;
+      cursor: pointer;
     }
 
     & i:hover {
@@ -174,7 +174,7 @@ footer {
       position: relative;
     }
 
-    .font-user i{
+    .font-user i {
       position: absolute;
       left: 15px;
       top: 47px;

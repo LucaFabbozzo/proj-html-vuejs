@@ -24,6 +24,11 @@ export default {
           <li v-for="(menus, index) in store.navbar" :key="index"><a :class="{ 'active': menus.active }" href="#">{{
               menus.label
           }}<i v-if="menus.items" class="fa-solid fa-chevron-down"></i></a>
+            <div class="options-panel">
+              <ul v-for="(option, index) in menus.items" :key="index">
+                <li>{{ option }}</li>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>
@@ -64,12 +69,28 @@ header {
 
       li {
         display: inline-block;
+        position: relative;
         list-style: none;
         padding: 0 20px;
         text-transform: uppercase;
         font-size: 0.8rem;
         font-weight: bold;
         cursor: pointer;
+
+        .options-panel {
+          color: $primary-font;
+          position: absolute;
+          top: 25px;
+          right: 5px;
+          display: none;
+          cursor: pointer;
+
+          ul {
+            li {
+              text-transform: capitalize;
+            }
+          }
+        }
 
         a {
           text-decoration: none;
@@ -81,6 +102,14 @@ header {
           margin-left: 5px;
         }
       }
+    }
+
+    & li:hover i {
+      display: none;
+    }
+
+    & li:hover .options-panel {
+      display: block;
     }
   }
 

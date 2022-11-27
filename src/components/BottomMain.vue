@@ -78,12 +78,12 @@ export default {
       border-bottom: 3px solid $primary-font;
       transition: 0.5s all;
 
-    &.box:hover {
-      transform: scale(1.04);
-      border-bottom: 3px solid $secondary-color;
-      box-shadow: 0px 1px 9px rgba($color: $primary-font, $alpha: 1.5);
-    }
-    
+      &.box:hover {
+        transform: scale(1.04);
+        border-bottom: 3px solid $secondary-color;
+        box-shadow: 0px 1px 9px rgba($color: $primary-font, $alpha: 1.5);
+      }
+
 
       span {
         display: inline-block;

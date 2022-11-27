@@ -16,25 +16,25 @@ export default {
     <p>Start Working with <span class="blue">Landrick</span> that can provide everything you need to generate <br>
       awareness, drive traffic, connect.</p>
     <div class="cards d-flex justify-content-between">
-      <div class="square d2">
+      <div class="square left">
         <i class="fa-solid fa-layer-group top"></i>
         <h4>Modular</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
         <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
       </div>
-      <div class="square">
+      <div class="square middle-left">
         <i class="fa-solid fa-desktop top"></i>
         <h4>Responsive</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
         <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
       </div>
-      <div class="square">
+      <div class="square middle-right">
         <i class="fa-solid fa-users-viewfinder top"></i>
         <h4>Customizable</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
         <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
       </div>
-      <div class="square">
+      <div class="square right">
         <i class="fa-solid fa-arrows-up-down-left-right top"></i>
         <h4>Scalable</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
@@ -98,11 +98,14 @@ export default {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.5s all;
+    position: relative;
+
 
     &.square:hover {
       transform: scale(1.07);
       transform-origin: bottom;
     }
+
 
     i.bottom {
       font-size: 0.7rem;
@@ -123,6 +126,34 @@ export default {
     .blue {
       color: $secondary-color;
     }
+  }
+
+  .square:after {
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 140px;
+    top: 40%;
+    left: 58%;
+    margin: -90px 0 0 -92px;
+    color: #2F55D4;
+    opacity: 0.05;
+    z-index: 1;
+  }
+
+  .left:after {
+    content: '\f5fd';
+  }
+
+  .middle-left:after {
+    content: '\f390';
+  }
+
+  .middle-right:after {
+    content: '\e595';
+  }
+
+  .right:after {
+    content: '\f0b2';
   }
 
   .down {

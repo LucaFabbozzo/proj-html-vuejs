@@ -11,7 +11,7 @@ export const store = reactive({
       route: "landing",
       label: "Landing",
       active: true,
-      items: ["landing - 1", "landing - 2", "landing - 3"],
+      items: ["landing-1", "landing-2", "landing-3"],
     },
     {
       route: "page",
@@ -116,4 +116,3 @@ export const store = reactive({
     },
   ],
 });
-
