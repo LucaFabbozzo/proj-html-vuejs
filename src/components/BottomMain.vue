@@ -74,6 +74,16 @@ export default {
       border: 1px solid #F6F6F7;
       padding: 12px 23px;
       border-radius: 10px;
+      cursor: pointer;
+      border-bottom: 3px solid $primary-font;
+      transition: 0.5s all;
+
+    &.box:hover {
+      transform: scale(1.04);
+      border-bottom: 3px solid $secondary-color;
+      box-shadow: 0px 1px 9px rgba($color: $primary-font, $alpha: 1.5);
+    }
+    
 
       span {
         display: inline-block;
