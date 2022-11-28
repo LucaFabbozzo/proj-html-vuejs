@@ -102,6 +102,7 @@ export default {
       border-radius: 8px;
       cursor: pointer;
       transition: 0.5s all;
+      position: relative;
 
 
       &.square:hover {
@@ -133,33 +134,36 @@ export default {
   }
 
 
-  // .square:after {
-  //   font-family: FontAwesome;
-  //   position: absolute;
-  //   font-size: 140px;
-  //   top: 40%;
-  //   left: 58%;
-  //   margin: -90px 0 0 -92px;
-  //   color: #2F55D4;
-  //   opacity: 0.05;
-  //   z-index: 1;
-  // }
+  .square:after {
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 140px;
+    top: 40%;
+    left: 58%;
+    margin: -90px 0 0 -92px;
+    color: #2F55D4;
+    opacity: 0.05;
+    z-index: 1;
+  }
 
-  // .left:after {
-  //   content: '\f5fd';
-  // }
 
-  // .middle-left:after {
-  //   content: '\f390';
-  // }
+  .left:after {
+    content: '\f5fd';
+  }
 
-  // .middle-right:after {
-  //   content: '\e595';
-  // }
+  .middle-left:after {
+    content: '\f390';
+  }
 
-  // .right:after {
-  //   content: '\f0b2';
-  // }
+  .middle-right:after {
+    content: '\e595';
+  }
+
+  .right:after {
+    content: '\f0b2';
+  }
+
+
 
   .down {
     p.blue {

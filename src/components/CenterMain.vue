@@ -70,6 +70,10 @@ export default {
       }
     }
 
+    button:hover {
+      background-color: #0f40e0
+    }
+
   }
 
   .right {

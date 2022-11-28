@@ -162,6 +162,10 @@ export default {
         width: 130px;
         border-radius: 30px;
       }
+
+      button:hover {
+        background-color: #2443AB;
+      }
     }
   }
 }
