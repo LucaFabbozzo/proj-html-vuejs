@@ -146,7 +146,6 @@ export default {
     z-index: 1;
   }
 
-
   .left:after {
     content: '\f5fd';
   }
