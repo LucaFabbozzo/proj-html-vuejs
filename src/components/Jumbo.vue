@@ -7,7 +7,7 @@ export default {
 <template>
   <div class="jumbo">
     <i class="fa-solid fa-gear"></i>
-    <div class="container d-flex w-75 m-auto">
+    <div class=" container-lf">
       <div class="left">
         <span>Development</span>
         <h1>A complete<br>Developer Tolset</h1>
@@ -42,6 +42,12 @@ export default {
   background-color: $top-background;
   height: 100%;
   border-bottom: 1px solid #edeff2;
+
+  .container-lf {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+  }
 
   .fa-gear {
     color: $secondary-color;
@@ -111,7 +117,6 @@ export default {
 
 .clients {
   height: 105px;
-  min-width: 1000px;
   background-color: #F8F9FC;
   margin-bottom: 110px;
 
@@ -138,6 +143,32 @@ export default {
 
     .clients {
       min-width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .jumbo {
+    .left {
+      min-width: 270px;
+      max-width: 300px;
+      padding-top: 70px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 568px) {
+  .jumbo {
+    .container-lf {
+      width: 50%;
+      flex-wrap: wrap;
+    }
+  }
+
+  .clients {
+    img {
+      width: 44px;
     }
   }
 

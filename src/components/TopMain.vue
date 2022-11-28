@@ -70,6 +70,8 @@ export default {
 @use '../styles/partials/mixin' as *;
 
 .main-top {
+
+
   h3 {
     font-weight: 700;
     padding-bottom: 20px;
@@ -89,72 +91,75 @@ export default {
     color: $secondary-color;
   }
 
-  .square {
-    min-width: 190px;
-    max-width: 200px;
-    border: 1px solid #F6F6F7;
-    padding: 10px 20px;
-    margin-bottom: 80px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.5s all;
-    position: relative;
-
-
-    &.square:hover {
-      transform: scale(1.07);
-      transform-origin: bottom;
-    }
-
-
-    i.bottom {
-      font-size: 0.7rem;
-      margin-left: 5px;
-    }
-
-    i.top {
-      background-color: $btn-backgray;
-      color: $secondary-color;
-      padding: 15px;
+  .cards {
+    .square {
+      min-width: 190px;
+      width: 200px;
+      height: 300px;
+      border: 1px solid #F6F6F7;
+      padding: 10px 20px;
+      margin-bottom: 80px;
       border-radius: 8px;
+      cursor: pointer;
+      transition: 0.5s all;
+
+
+      &.square:hover {
+        transform: scale(1.07);
+        transform-origin: bottom;
+      }
+
+
+      i.bottom {
+        font-size: 0.7rem;
+        margin-left: 5px;
+      }
+
+      i.top {
+        background-color: $btn-backgray;
+        color: $secondary-color;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      p {
+        padding-bottom: 5px;
+      }
+
+      .blue {
+        color: $secondary-color;
+      }
     }
-
-    p {
-      padding-bottom: 5px;
-    }
-
-    .blue {
-      color: $secondary-color;
-    }
   }
 
-  .square:after {
-    font-family: FontAwesome;
-    position: absolute;
-    font-size: 140px;
-    top: 40%;
-    left: 58%;
-    margin: -90px 0 0 -92px;
-    color: #2F55D4;
-    opacity: 0.05;
-    z-index: 1;
-  }
 
-  .left:after {
-    content: '\f5fd';
-  }
+  // .square:after {
+  //   font-family: FontAwesome;
+  //   position: absolute;
+  //   font-size: 140px;
+  //   top: 40%;
+  //   left: 58%;
+  //   margin: -90px 0 0 -92px;
+  //   color: #2F55D4;
+  //   opacity: 0.05;
+  //   z-index: 1;
+  // }
 
-  .middle-left:after {
-    content: '\f390';
-  }
+  // .left:after {
+  //   content: '\f5fd';
+  // }
 
-  .middle-right:after {
-    content: '\e595';
-  }
+  // .middle-left:after {
+  //   content: '\f390';
+  // }
 
-  .right:after {
-    content: '\f0b2';
-  }
+  // .middle-right:after {
+  //   content: '\e595';
+  // }
+
+  // .right:after {
+  //   content: '\f0b2';
+  // }
 
   .down {
     p.blue {

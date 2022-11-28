@@ -15,7 +15,7 @@ export default {
 
 <template>
   <header>
-    <div class="container w-75 m-auto d-flex align-items-center justify-content-between h-100">
+    <div class="container-lf">
       <div class="logo">
         <img src="../assets/img/logo-dark.png" alt="logo">
       </div>
@@ -32,6 +32,9 @@ export default {
           </li>
         </ul>
       </nav>
+      <div class="menu-mobile">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <div class="icons">
         <i class="fa-solid fa-magnifying-glass null"></i>
         <i class="fa-brands fa-github color"></i>
@@ -48,6 +51,27 @@ export default {
 header {
   background-color: $top-background;
   height: 70px;
+
+  .container-lf {
+    display: flex;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-mobile {
+    width: 180px;
+    text-align: end;
+    display: none;
+
+    i {
+      font-size: 1.2rem;
+      color: $primary-font;
+
+    }
+  }
 
   .active {
     color: #2F55D4;
@@ -149,6 +173,31 @@ header {
           font-size: 0.6rem;
         }
       }
+    }
+  }
+}
+
+
+@media screen and (max-width: 810px) {
+  header {
+    nav {
+      display: none;
+    }
+
+    .menu-mobile {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  header {
+    .container-lf {
+      width: 50%;
+    }
+
+    .icons {
+      display: none;
     }
   }
 }
