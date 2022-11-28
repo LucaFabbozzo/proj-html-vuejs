@@ -20,6 +20,7 @@ export default {
         <img src="../assets/img/logo-dark.png" alt="logo">
       </div>
       <nav>
+        <!-- stampo dinamicamente il menu con i sottomenu e la classe active -->
         <ul>
           <li v-for="(menus, index) in store.navbar" :key="index"><a :class="{ 'active': menus.active }" href="#">{{
               menus.label
@@ -162,7 +163,8 @@ header {
   }
 }
 
-// media query
+
+// ************* MEDIA ******************
 
 @media screen and (max-width: 1050px) {
   header {

@@ -107,11 +107,11 @@ export default {
   .left {
     min-width: 540px;
     max-width: 560px;
-    padding-top: 140px;
+    padding-top: 80px;
   }
 
   .right {
-    padding-top: 60px;
+    padding-top: 20px;
   }
 }
 
@@ -132,11 +132,12 @@ export default {
     .left {
       min-width: 400px;
       max-width: 440px;
+      padding-top: 30px;
     }
 
     .right {
       img {
-        padding-top: 100px;
+        padding-top: 0px;
         width: 300px;
       }
     }

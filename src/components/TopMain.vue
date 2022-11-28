@@ -16,25 +16,25 @@ export default {
     <p>Start Working with <span class="blue">Landrick</span> that can provide everything you need to generate <br>
       awareness, drive traffic, connect.</p>
     <div class="cards d-flex justify-content-between">
-      <div class="square left">
+      <div class="square">
         <i class="fa-solid fa-layer-group top"></i>
         <h4>Modular</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
         <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
       </div>
-      <div class="square middle-left">
+      <div class="square">
         <i class="fa-solid fa-desktop top"></i>
         <h4>Responsive</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
         <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
       </div>
-      <div class="square middle-right">
+      <div class="square">
         <i class="fa-solid fa-users-viewfinder top"></i>
         <h4>Customizable</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
         <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
       </div>
-      <div class="square right">
+      <div class="square">
         <i class="fa-solid fa-arrows-up-down-left-right top"></i>
         <h4>Scalable</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
@@ -89,11 +89,11 @@ export default {
 
   span {
     color: $secondary-color;
+    font-weight: bolder;
   }
 
   .cards {
     .square {
-      min-width: 190px;
       width: 200px;
       height: 300px;
       border: 1px solid #F6F6F7;
@@ -102,7 +102,6 @@ export default {
       border-radius: 8px;
       cursor: pointer;
       transition: 0.5s all;
-      position: relative;
 
 
       &.square:hover {
@@ -131,38 +130,9 @@ export default {
         color: $secondary-color;
       }
     }
+
+
   }
-
-
-  .square:after {
-    font-family: FontAwesome;
-    position: absolute;
-    font-size: 140px;
-    top: 40%;
-    left: 58%;
-    margin: -90px 0 0 -92px;
-    color: #2F55D4;
-    opacity: 0.05;
-    z-index: 1;
-  }
-
-  .left:after {
-    content: '\f5fd';
-  }
-
-  .middle-left:after {
-    content: '\f390';
-  }
-
-  .middle-right:after {
-    content: '\e595';
-  }
-
-  .right:after {
-    content: '\f0b2';
-  }
-
-
 
   .down {
     p.blue {
@@ -248,7 +218,8 @@ export default {
 }
 
 
-// media query
+//************** MEDIA ********************
+
 @media screen and (max-width: 1050px) {
   .main-top {
     .cards {
@@ -277,7 +248,4 @@ export default {
     }
   }
 }
-
-
-@media screen and (max-width: 568px) {}
 </style>

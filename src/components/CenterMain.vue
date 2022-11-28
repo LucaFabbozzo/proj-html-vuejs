@@ -73,7 +73,6 @@ export default {
     button:hover {
       background-color: #0f40e0
     }
-
   }
 
   .right {
@@ -84,7 +83,7 @@ export default {
   }
 }
 
-// media query
+//*****************MEDIA******************/
 
 @media screen and (max-width: 1050px) {
   .main-center {
@@ -108,7 +107,7 @@ export default {
   .main-center {
     .left {
       min-width: 320px;
-      min-width: 0px;
+      min-width: 200px;
       padding-top: 0px;
       padding-bottom: 0px;
       padding-right: 70px;

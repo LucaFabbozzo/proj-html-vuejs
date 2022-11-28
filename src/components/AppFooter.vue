@@ -202,7 +202,7 @@ footer {
 
 }
 
-// media query
+//******************* MEDIA ********************/
 
 @media screen and (max-width: 1050px) {
   footer {

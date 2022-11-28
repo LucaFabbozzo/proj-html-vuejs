@@ -18,7 +18,7 @@ export default {
       <p>Start working with <span>Landrick</span> that can provide everything you need to generate<br>awareness, drive
         traffic, connect</p>
     </div>
-    <!-- stampo i box dinamicamente tramite i miei dati in store -->
+    <!-- stampo i box dinamicamente tramite i miei dati in store ed il ribbon se true o false -->
     <div class="center d-flex justify-content-between">
       <div class="box" v-for="(rate, index) in store.rates" :key="index">
         <div v-if="rate.best" class="ribbon"><span>Best</span></div>
@@ -187,6 +187,10 @@ export default {
     padding-bottom: 55px;
     min-width: 600px;
 
+    span {
+      font-weight: bold;
+    }
+
     form {
       min-width: 600px;
       width: 650px;
@@ -204,6 +208,10 @@ export default {
         margin-right: 5px;
       }
 
+      input:focus {
+        outline: none;
+      }
+
       button {
         @include btnBlue;
         width: 130px;
@@ -217,7 +225,7 @@ export default {
   }
 }
 
-// media query
+//**************** MEDIA *****************/
 
 @media screen and (max-width: 1050px) {
   .main-bottom {
