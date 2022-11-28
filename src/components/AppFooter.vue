@@ -14,7 +14,7 @@ export default {
 
 <template>
   <footer>
-    <div class="container w-75 m-auto">
+    <div class="lf-container">
       <div class="top d-flex py-5">
         <div class="landrick d-flex flex-column align-items-start w-50">
           <img src="../assets/img/logo-light.png" alt="logo-footer">
@@ -69,6 +69,11 @@ footer {
   color: #ffffff;
   height: 100%;
   border-bottom: 1px solid #26304F;
+
+  .lf-container {
+    width: 75%;
+    margin: 0 auto;
+  }
 
   p,
   label {
@@ -211,9 +216,22 @@ footer {
   }
 }
 
-@media screen and (max-width: 810px) {}
+@media screen and (max-width: 810px) {
+  footer {
+    .lf-container {
+      width: 100%;
+      margin: 50px;
+    }
 
-@media screen and (max-width: 568px) {}
+    .top {
+      flex-wrap: wrap;
+
+      .landrick {
+        padding-bottom: 80px;
+      }
+    }
+  }
+}
 </style>
 
 
