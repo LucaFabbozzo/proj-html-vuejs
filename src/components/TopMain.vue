@@ -255,6 +255,26 @@ export default {
         min-width: 280px;
       }
     }
+
+    .down {
+      p {
+        font-size: 0.8rem;
+      }
+
+      ul {
+        li {
+          font-size: 0.8rem;
+        }
+      }
+
+      .box {
+        width: 100%;
+        min-width: 10px;
+      }
+    }
   }
 }
+
+
+@media screen and (max-width: 568px) {}
 </style>

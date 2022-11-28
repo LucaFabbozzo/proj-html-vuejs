@@ -10,7 +10,7 @@ export default {
 
 <template>
   <main>
-    <div class="container w-75 m-auto">
+    <div class="container-lf">
       <TopMain />
       <CenterMain />
       <BottomMain />
@@ -23,5 +23,21 @@ export default {
 
 main {
   background-color: $main-background;
+
+  .container-lf {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+// media query
+
+@media screen and (max-width: 568px) {
+  main {
+    .container-lf {
+      width: 50%;
+    }
+  }
+
 }
 </style>

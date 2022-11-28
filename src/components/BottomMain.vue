@@ -181,4 +181,52 @@ export default {
   }
 
 }
+
+@media screen and (max-width: 810px) {
+  .main-bottom {
+    .center {
+      .box {
+        min-width: 180px;
+      }
+    }
+
+    .bottom {
+      form {
+        min-width: 450px;
+        width: 455px;
+
+        input {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .main-bottom {
+
+    .top,
+    .bottom {
+      min-width: 300px;
+
+      form {
+        min-width: 310px;
+        width: 100px;
+
+        input {
+          width: 140px;
+        }
+      }
+    }
+
+    .center {
+      flex-wrap: wrap;
+
+      .box {
+        min-width: 270px;
+      }
+    }
+  }
+}
 </style>
