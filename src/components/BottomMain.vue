@@ -134,6 +134,7 @@ export default {
         }
       }
 
+      // ribbon
       .ribbon {
         width: 133px;
         height: 154px;
@@ -143,30 +144,10 @@ export default {
         overflow: hidden;
       }
 
-      .ribbon::before,
-      .ribbon::after {
-        position: absolute;
-        content: "";
-        z-index: -1;
-        display: block;
-        border-top-color: transparent;
-        border-left-color: transparent;
-      }
-
-      .ribbon::before {
-        top: 0px;
-        right: 15px;
-      }
-
-      .ribbon::after {
-        bottom: 15px;
-        left: 0px;
-      }
-
       .ribbon span {
         position: absolute;
-        top: 11px;
-        right: 15px;
+        left: 37px;
+        bottom: 91px;
         transform: rotate(48deg);
         width: 136px;
         background: #F17424;
@@ -175,8 +156,6 @@ export default {
         text-align: center;
         font-size: 14px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-        left: 37px;
-        bottom: 91px;
       }
     }
   }
@@ -294,48 +273,3 @@ export default {
 
 
 
-
-
-<!-- .table .ribbon{
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  overflow: hidden;
-}
-
-.table .ribbon::before,
-table .ribbon::after{
-  position: absolute;
-  content: "";
-  z-index: -1;
-  display: block;
-  border: 7px solid #ba24f0;
-  border-top-color: transparent;
-  border-left-color: transparent;
-}
-
-.table .ribbon::before{
-  top: 0px;
-  right: 15px;
-}
-
-.table .ribbon::after{
-  bottom: 15px;
-  left: 0px;
-}
-
-.table .ribbon span{
-  position: absolute;
-  top:30px;
-  right: 0;
-  transform: rotate(-45deg);
-  width: 200px;
-  background: #ba24f0;
-  padding: 10px 0;
-  color: #fff;
-  text-align: center;
-  font-size: 17px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
-} -->
