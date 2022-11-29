@@ -16,25 +16,25 @@ export default {
     <p>Start Working with <span class="blue">Landrick</span> that can provide everything you need to generate <br>
       awareness, drive traffic, connect.</p>
     <div class="cards d-flex justify-content-between">
-      <div class="square">
+      <div class="square left">
         <i class="fa-solid fa-layer-group top"></i>
         <h4>Modular</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
         <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
       </div>
-      <div class="square">
+      <div class="square middle-left">
         <i class="fa-solid fa-desktop top"></i>
         <h4>Responsive</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
         <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
       </div>
-      <div class="square">
+      <div class="square middle-right">
         <i class="fa-solid fa-users-viewfinder top"></i>
         <h4>Customizable</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
         <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
       </div>
-      <div class="square">
+      <div class="square right">
         <i class="fa-solid fa-arrows-up-down-left-right top"></i>
         <h4>Scalable</h4>
         <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
@@ -68,6 +68,7 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/vars' as *;
 @use '../styles/partials/mixin' as *;
+
 
 .main-top {
 
@@ -131,8 +132,44 @@ export default {
       }
     }
 
+    .left {
+      background-image: none;
+      background-size: cover;
+    }
 
+    & .left:hover {
+      background-image: url('../assets/img/layer-group-solid.svg');
+    }
+
+    .middle-left {
+      background-image: none;
+      background-size: cover;
+    }
+
+    & .middle-left:hover {
+      background-image: url('../assets/img/desktop-solid.svg');
+    }
+
+    .middle-right {
+      background-image: none;
+      background-size: cover;
+    }
+
+    & .middle-right:hover {
+      background-image: url('../assets/img/users-viewfinder-solid.svg');
+    }
+
+    .right {
+      background-image: none;
+      background-size: cover;
+    }
+
+    & .right:hover {
+      background-image: url('../assets/img/up-down-left-right-solid.svg');
+    }
   }
+
+
 
   .down {
     p.blue {
