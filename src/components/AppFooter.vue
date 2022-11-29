@@ -106,6 +106,10 @@ footer {
         text-decoration: none;
         color: #adb5bd;
       }
+
+      & a:hover {
+        color: #ffffff;
+      }
     }
   }
 

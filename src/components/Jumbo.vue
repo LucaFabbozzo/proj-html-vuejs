@@ -104,6 +104,10 @@ export default {
     margin-bottom: 10px;
   }
 
+  & .btn-white:hover {
+    background-color: #edeff2;
+  }
+
   .left {
     min-width: 540px;
     max-width: 560px;

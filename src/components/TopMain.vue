@@ -95,7 +95,7 @@ export default {
 
   .cards {
     .square {
-      width: 200px;
+      width: 250px;
       height: 300px;
       border: 1px solid #F6F6F7;
       padding: 10px 20px;
