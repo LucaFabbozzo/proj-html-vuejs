@@ -1,7 +1,9 @@
 <script>
-import { store } from '../data/store'
+import { store } from '../data/store';
+import KeyFetures from './KeyFetures.vue';
 export default {
   name: 'TopMain',
+  components: { KeyFetures, KeyFetures },
   data() {
     return {
       store
@@ -15,32 +17,7 @@ export default {
     <h3>Key Features</h3>
     <p>Start Working with <span class="blue">Landrick</span> that can provide everything you need to generate <br>
       awareness, drive traffic, connect.</p>
-    <div class="cards d-flex justify-content-between">
-      <div class="square left">
-        <i class="fa-solid fa-layer-group top"></i>
-        <h4>Modular</h4>
-        <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
-        <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
-      </div>
-      <div class="square middle-left">
-        <i class="fa-solid fa-desktop top"></i>
-        <h4>Responsive</h4>
-        <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
-        <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
-      </div>
-      <div class="square middle-right">
-        <i class="fa-solid fa-users-viewfinder top"></i>
-        <h4>Customizable</h4>
-        <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
-        <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
-      </div>
-      <div class="square right">
-        <i class="fa-solid fa-arrows-up-down-left-right top"></i>
-        <h4>Scalable</h4>
-        <p>Composed in a pseudo-Latin<br>language which more or less<br> corresponds.</p>
-        <p class="blue">Read More <i class="fa-solid fa-chevron-right bottom"></i></p>
-      </div>
-    </div>
+      <KeyFetures />
     <div class="text-center down">
       <p class="blue">Quickstart</p>
       <h3>Awesome isn't it? Let's dive in!</h3>
@@ -83,93 +60,11 @@ export default {
     padding-bottom: 30px;
   }
 
-  h4 {
-    font-size: 1.1rem;
-    padding-top: 20px;
-  }
 
   span {
     color: $secondary-color;
     font-weight: bolder;
   }
-
-  .cards {
-    .square {
-      width: 250px;
-      height: 300px;
-      border: 1px solid #F6F6F7;
-      padding: 10px 20px;
-      margin-bottom: 80px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.5s all;
-
-
-      &.square:hover {
-        transform: scale(1.07);
-        transform-origin: bottom;
-      }
-
-
-      i.bottom {
-        font-size: 0.7rem;
-        margin-left: 5px;
-      }
-
-      i.top {
-        background-color: $btn-backgray;
-        color: $secondary-color;
-        padding: 15px;
-        border-radius: 8px;
-      }
-
-      p {
-        padding-bottom: 5px;
-      }
-
-      .blue {
-        color: $secondary-color;
-      }
-    }
-
-    .left {
-      background-image: none;
-      background-size: cover;
-    }
-
-    & .left:hover {
-      background-image: url('../assets/img/layer-group-solid.svg');
-    }
-
-    .middle-left {
-      background-image: none;
-      background-size: cover;
-    }
-
-    & .middle-left:hover {
-      background-image: url('../assets/img/desktop-solid.svg');
-    }
-
-    .middle-right {
-      background-image: none;
-      background-size: cover;
-    }
-
-    & .middle-right:hover {
-      background-image: url('../assets/img/users-viewfinder-solid.svg');
-    }
-
-    .right {
-      background-image: none;
-      background-size: cover;
-    }
-
-    & .right:hover {
-      background-image: url('../assets/img/up-down-left-right-solid.svg');
-    }
-  }
-
-
 
   .down {
     p.blue {
